@@ -135,6 +135,14 @@
             }
         },
         {
+            "Key": "5438d143-6229-424b-9914-34ff0805d084",
+            "Value": {
+                "id": "5e2382bd-2ca4-4168-8966-bfda49cb979a",
+                "resourcePath": "views\\5438d143-6229-424b-9914-34ff0805d084.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "75ac291e-7061-4bcb-8e8a-3b3545332d41",
             "Value": {
                 "id": "f000cfd0-9720-4847-bf47-ece7d53a2474",
@@ -148,6 +156,14 @@
                 "id": "33c4ef2e-31bc-4d8c-b6b5-d528d4e27db2",
                 "resourcePath": "objects\\obj_spawnpool\\obj_spawnpool.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "a352ff69-34a4-4f75-96cf-c71c2a968849",
+            "Value": {
+                "id": "b82fdd31-17ff-4c89-a6e1-5a3a21bbc54d",
+                "resourcePath": "sprites\\spr_coin\\spr_coin.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -172,6 +188,22 @@
                 "id": "f2a9cf28-ac1c-466b-a83f-d9d3e16571af",
                 "resourcePath": "rooms\\room0\\room0.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "b277ca96-6817-4672-bd9d-2b72ea5b1795",
+            "Value": {
+                "id": "3115842e-54fd-4450-918f-6ef1f763a8cb",
+                "resourcePath": "sounds\\snd_coin\\snd_coin.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "b5e1cdea-02a8-49bd-8656-b9af4fe35686",
+            "Value": {
+                "id": "27725cde-d0da-47dd-a565-2a521443b4c4",
+                "resourcePath": "fonts\\fnt_score\\fnt_score.yy",
+                "resourceType": "GMFont"
             }
         },
         {
@@ -220,6 +252,14 @@
                 "id": "ebd8027b-7d88-4940-89ad-3b4ae06acd73",
                 "resourcePath": "options\\windows\\options_windows.yy",
                 "resourceType": "GMWindowsOptions"
+            }
+        },
+        {
+            "Key": "d1f9ebe3-4ba9-4bb8-b4aa-9e2d39348353",
+            "Value": {
+                "id": "9ccdc6bd-25a1-4493-a351-6d21421a308b",
+                "resourcePath": "objects\\obj_ui\\obj_ui.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -315,6 +355,14 @@
             "Value": {
                 "id": "76e26bb3-bcdd-4168-9b31-c673ce072072",
                 "resourcePath": "objects\\obj_spawnend\\obj_spawnend.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "fcf0f009-54b0-4f60-af4e-c6eab798989f",
+            "Value": {
+                "id": "584945b7-c68c-4f98-8a89-44755da19bef",
+                "resourcePath": "objects\\obj_coin\\obj_coin.yy",
                 "resourceType": "GMObject"
             }
         }
