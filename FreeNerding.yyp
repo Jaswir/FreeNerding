@@ -55,14 +55,6 @@
             }
         },
         {
-            "Key": "0c6aaf81-4d1e-48db-bc18-eaf7d2e2be3a",
-            "Value": {
-                "id": "5d445459-805d-45c0-bde3-93ebe8718595",
-                "resourcePath": "objects\\obj_hoop2\\obj_hoop2.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "10b95594-1645-465c-92f7-90e0ac8d8fc0",
             "Value": {
                 "id": "a077cc38-6464-4a55-b5ea-f9f0656ddec3",
@@ -71,18 +63,18 @@
             }
         },
         {
-            "Key": "126f3a60-d9e6-4cb3-804c-498f1fbad8fb",
+            "Key": "1693fed4-1623-4fff-8316-0550318fdea9",
             "Value": {
-                "id": "59661714-d81c-4372-a4a1-d339b997b403",
-                "resourcePath": "objects\\obj_hoop\\obj_hoop.yy",
-                "resourceType": "GMObject"
+                "id": "7fc4d7de-5552-410a-8e9f-b4a8f39172a4",
+                "resourcePath": "sprites\\spr_areano\\spr_areano.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
             "Key": "17b51ced-d421-44ec-b9a3-98396584525c",
             "Value": {
                 "id": "35c9b955-29f6-40f3-9a15-6b8c304f6024",
-                "resourcePath": "objects\\obj_rolemodel2\\obj_rolemodel2.yy",
+                "resourcePath": "objects\\obj_rolemodel\\obj_rolemodel.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -151,14 +143,6 @@
             }
         },
         {
-            "Key": "9c0981be-84c6-4cd5-869c-57dc7dbacdb3",
-            "Value": {
-                "id": "33c4ef2e-31bc-4d8c-b6b5-d528d4e27db2",
-                "resourcePath": "objects\\obj_spawnpool\\obj_spawnpool.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "a352ff69-34a4-4f75-96cf-c71c2a968849",
             "Value": {
                 "id": "b82fdd31-17ff-4c89-a6e1-5a3a21bbc54d",
@@ -172,6 +156,14 @@
                 "id": "3c27023e-36ba-472f-bc72-409c8ede3da1",
                 "resourcePath": "views\\aa5018f0-7f27-4a11-b50d-26e59a56906c.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "ab7d2b2d-be98-4bcf-a8b4-b9d58852a8e3",
+            "Value": {
+                "id": "518d1822-fc5b-463b-8100-fe11e7d40f16",
+                "resourcePath": "objects\\obj_areano\\obj_areano.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -220,6 +212,14 @@
                 "id": "482a29fd-664c-4d56-9fb2-9820b5f34af2",
                 "resourcePath": "views\\b85497db-d6c3-448b-9ca5-8a4815dcabc7.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "c06197a8-25e7-40c0-b563-8446b34e22db",
+            "Value": {
+                "id": "6a53572f-4740-4345-9734-7207881985fb",
+                "resourcePath": "sprites\\spr_areayes\\spr_areayes.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -275,14 +275,6 @@
             "Value": {
                 "id": "6490e085-42df-4af8-b179-fb22462b1635",
                 "resourcePath": "views\\e14e2e17-b5fd-4041-9801-4e06e052b5b0.yy",
-                "resourceType": "GMFolder"
-            }
-        },
-        {
-            "Key": "e5082029-cea0-4734-a44b-76dfcaa424a0",
-            "Value": {
-                "id": "cc80c045-aa27-4605-bd1b-3834a9e1eb85",
-                "resourcePath": "views\\e5082029-cea0-4734-a44b-76dfcaa424a0.yy",
                 "resourceType": "GMFolder"
             }
         },
@@ -351,10 +343,10 @@
             }
         },
         {
-            "Key": "fc70b36a-0669-4932-9e41-c83148b90543",
+            "Key": "fb953cd2-db68-48d7-af21-5b973815f081",
             "Value": {
-                "id": "76e26bb3-bcdd-4168-9b31-c673ce072072",
-                "resourcePath": "objects\\obj_spawnend\\obj_spawnend.yy",
+                "id": "260adc86-896b-457d-95e1-fd774715066c",
+                "resourcePath": "objects\\obj_areayes\\obj_areayes.yy",
                 "resourceType": "GMObject"
             }
         },

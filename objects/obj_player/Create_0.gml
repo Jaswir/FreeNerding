@@ -3,6 +3,7 @@
 
 spd = 4.0;
 startedjump = false;
+jumpfinished = false;
 jumpsize = 50;
 jumpspeed = 0.4;
 

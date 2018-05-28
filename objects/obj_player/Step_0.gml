@@ -20,6 +20,7 @@ if(keyboard_check_pressed(vk_space) || startedjump){
 		oldx = x;
 		oldy = y;
 		startedjump = true;	
+		jumpfinished = false;
 		i = 0;
 		
 		audio_play_sound(snd_jump, 1, false);
@@ -29,7 +30,10 @@ if(keyboard_check_pressed(vk_space) || startedjump){
 	if(leftdown) x = oldx - jumpsize + cos(i) * jumpsize;
 	else x = oldx + jumpsize - cos(i) * jumpsize;	
 	y = oldy + sin(i) * jumpsize;
-	if(abs(i) >= 3.14) startedjump = false;
+	if(abs(i) >= 3.14){
+		startedjump = false;
+		jumpfinished = true;
+	}
 		
 	
 
