@@ -6,8 +6,8 @@ if(collided) exit;
 
 if(obj_player.startedjump){
 	with(obj_player){
-		x = 96;
-		y = 96;	
+		x = 600;
+		y = 250;	
 		startedjump = false;
 		exit;
 	}

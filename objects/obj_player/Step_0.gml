@@ -30,8 +30,13 @@ if(keyboard_check_pressed(vk_space) || startedjump){
 	else x = oldx + jumpsize - cos(i) * jumpsize;	
 	y = oldy + sin(i) * jumpsize;
 	if(abs(i) >= 3.14) startedjump = false;
+		
 	
+
 }
 	
-	
+
+
+
+
 	

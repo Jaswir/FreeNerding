@@ -8,4 +8,4 @@ with(instance_create_layer(x, y, "Instances", obj_rolemodel)){
 	
 }
 
-alarm[0] = 60;
+alarm[0] = random_range(30, 150);

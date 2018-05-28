@@ -2,9 +2,9 @@
 // You can write your code in this editor
 
 if(startedjump){
-		x = 96;
-		y = 96;	
+		x = 600;
+		y = 250;	
 		startedjump = false;
-		walknormal = true;
+		move_towards_point(obj_spawnend.x, obj_spawnend.y, 3.0);
 		exit;
 }

@@ -9,4 +9,4 @@ with(instance_create_layer(x, y, "Instances", obj_rolemodel)){
 }
 
 spawntime = 35; 
-alarm[0] = random_range(30, 150);
+alarm[0] = spawntime;

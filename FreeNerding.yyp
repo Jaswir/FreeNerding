@@ -293,6 +293,14 @@
                 "resourcePath": "sprites\\spr_spawnpool\\spr_spawnpool.yy",
                 "resourceType": "GMSprite"
             }
+        },
+        {
+            "Key": "fc70b36a-0669-4932-9e41-c83148b90543",
+            "Value": {
+                "id": "76e26bb3-bcdd-4168-9b31-c673ce072072",
+                "resourcePath": "objects\\obj_spawnend\\obj_spawnend.yy",
+                "resourceType": "GMObject"
+            }
         }
     ],
     "script_order": [
