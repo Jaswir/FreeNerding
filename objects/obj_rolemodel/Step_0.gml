@@ -7,6 +7,6 @@ if(startedjump){
 	y = oldy + sin(i) * jumpsize;	
 }
 if (walknormal){
-	x += 5;		
-	if ( x > room_width) instance_destroy();
+	x -= 3;		
+	if ( x < 0) instance_destroy();
 }
