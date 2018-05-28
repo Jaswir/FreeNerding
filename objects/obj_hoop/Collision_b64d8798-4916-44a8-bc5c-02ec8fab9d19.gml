@@ -1,17 +1,12 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-not_collision = false
-if(collided) exit;
-
-if(obj_player.startedjump){
-	with(obj_player){
+if(obj_rolemodel.startedjump){
+	with(obj_rolemodel){
 		x = 96;
 		y = 96;	
 		startedjump = false;
+		walknormal = true;
 		exit;
 	}
 }
-
-
-collided = true;
