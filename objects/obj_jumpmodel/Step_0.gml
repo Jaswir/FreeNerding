@@ -7,13 +7,7 @@ switch(state){
 	
 		move_towards_point(obj_hoop_a.x, obj_hoop_a.y, 2.0);	
 		if(distance_to_point(obj_hoop_a.x, obj_hoop_a.y) <= 0){
-			state = "neutral";
-			with(obj_jumpcoachup){
-				shakeno = true;
-				alarm[0] = shakeduration;
-				other.alarm[0] = shakeduration;
-			}
-			
+			state = "jump";
 			speed = 0;
 		}		
 		
@@ -44,12 +38,9 @@ switch(state){
 		if(abs(i) >= 3.14){
 			startedjump = false;
 			jumpfinished = true;
-			state = "move back 2";
+			if(place_meeting(x, y, obj_hoop_a)) state = "move back 2";
+			else state = "move back";
 			
-			with(obj_jumpcoachup){
-				shakeyes = true;
-				alarm[1] = shakeduration;
-			}
 			
 			alarm[1] = 5;
 		}
@@ -69,12 +60,7 @@ switch(state){
 	
 		move_towards_point(obj_hoop_b.x, obj_hoop_b.y, 2.0);	
 		if(distance_to_point(obj_hoop_b.x, obj_hoop_b.y) <= 0){
-			state = "neutral";
-			with(obj_jumpcoachdown){
-				shakeno = true;
-				alarm[0] = shakeduration;
-				other.alarm[2] = shakeduration;
-			}
+			state = "jump2";
 			
 			speed = 0;
 		}		
@@ -96,12 +82,9 @@ switch(state){
 		if(abs(i) >= 3.14){
 			startedjump = false;
 			jumpfinished = true;
-			state = "move back";
 			
-			with(obj_jumpcoachdown){
-				shakeyes = true;
-				alarm[1] = shakeduration;
-			}
+			if(place_meeting(x, y, obj_hoop_b)) state = "move back";
+			else state = "move back 2";
 			
 			alarm[1] = 5;
 		}
