@@ -3,10 +3,14 @@
 
 //First teleport
 if(!firstenter){
-	firstenter = true;	
+	
 	with(obj_player){
-		x = obj_hoop_b.x;
-		y = obj_hoop_b.y;
+		if(jumpfinished){
+			x = obj_hoop_b.x;
+			y = obj_hoop_b.y;	
+			jumpfinished = false;
+			other.firstenter = true;		
+		}
 	}
 	
 	exit;
@@ -19,10 +23,14 @@ left = false;
 if(hasleft){
 	
 	with(obj_player){
-		x = obj_hoop_b.x;
-		y = obj_hoop_b.y;
+		if(jumpfinished){
+			x = obj_hoop_b.x;
+			y = obj_hoop_b.y;	
+			jumpfinished = false;
+			other.hasleft = false;
+			other.entered = false;
+		}
 	}
 	
-	hasleft = false;
-	entered = false;
+
 }

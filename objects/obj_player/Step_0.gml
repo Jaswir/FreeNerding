@@ -33,6 +33,7 @@ if(keyboard_check_pressed(vk_space) || startedjump){
 	if(abs(i) >= 3.14){
 		startedjump = false;
 		jumpfinished = true;
+		alarm[1] = 5;
 	}
 		
 	
