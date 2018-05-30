@@ -39,6 +39,14 @@
             }
         },
         {
+            "Key": "03ab917a-1dba-4ae8-bea3-31fe99dccc6e",
+            "Value": {
+                "id": "c14ac4a6-de36-4b11-9421-38a2bc25cf3e",
+                "resourcePath": "objects\\obj_hoop\\obj_hoop.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "0b03cdac-d401-4148-b255-8f97626db011",
             "Value": {
                 "id": "e70f7abd-ca35-4a6f-9928-83a38e6dd30b",
@@ -231,14 +239,6 @@
             }
         },
         {
-            "Key": "c8cfe02d-7d3b-4986-b7be-f0ebed3de018",
-            "Value": {
-                "id": "16405cfb-6589-4b9c-8c11-3fcc86fc57ed",
-                "resourcePath": "sprites\\spr_hoop\\spr_hoop.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "cc001fcb-aa46-43dd-8ca1-f8c4fa97fbad",
             "Value": {
                 "id": "d11b5323-5e3b-44e4-9423-106bbc1b234f",
@@ -338,7 +338,7 @@
             "Key": "fb0c4af9-3f86-429a-9c94-89b43b255986",
             "Value": {
                 "id": "423fbd8a-9acf-4a02-9452-1a4e136dadc7",
-                "resourcePath": "sprites\\spr_spawnpool\\spr_spawnpool.yy",
+                "resourcePath": "sprites\\spr_hoop\\spr_hoop.yy",
                 "resourceType": "GMSprite"
             }
         },

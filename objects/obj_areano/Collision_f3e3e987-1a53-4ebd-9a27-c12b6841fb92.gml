@@ -10,3 +10,5 @@ if(obj_player.jumpfinished){
 		
 	}	
 }
+
+obj_rolemodel.shakeyes = false;
