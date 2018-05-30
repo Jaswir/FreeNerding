@@ -1,12 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if(mouse_check_button_pressed(mb_left)){	
-	state = "move";	
-}
-if(mouse_check_button_pressed(mb_right)){	
-	state = "jump";	
-}
 
 switch(state){
 	case "move":
@@ -66,7 +60,7 @@ switch(state){
 		move_towards_point(781, 368, 2.0);	
 		if(distance_to_point(787, 368) <= 0){
 			
-			state = "move2";
+			state = endstates[irandom_range(0, 1)];
 			speed = 0;
 		}
 		break;
@@ -75,6 +69,7 @@ switch(state){
 	
 		move_towards_point(obj_hoop_b.x, obj_hoop_b.y, 2.0);	
 		if(distance_to_point(obj_hoop_b.x, obj_hoop_b.y) <= 0){
+			state = "neutral";
 			with(obj_jumpcoachdown){
 				shakeno = true;
 				alarm[0] = shakeduration;
@@ -85,5 +80,32 @@ switch(state){
 		}		
 		
 		break;
+		
+	case "jump2" :
+		if(!startedjump){	
+			oldx = x;
+			oldy = y;
+			startedjump = true;	
+			jumpfinished = false;
+			i = 0;
+		}
+		
+		i-= jumpspeed;
+		x = oldx - jumpsize + cos(i) * jumpsize;	
+		y = oldy + sin(i) * jumpsize;
+		if(abs(i) >= 3.14){
+			startedjump = false;
+			jumpfinished = true;
+			state = "move back";
+			
+			with(obj_jumpcoachdown){
+				shakeyes = true;
+				alarm[1] = shakeduration;
+			}
+			
+			alarm[1] = 5;
+		}
+		break;
+	
 	
 }
