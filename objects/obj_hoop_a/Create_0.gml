@@ -1,5 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-score = 0;
-room_goto(room0);
+firstenter = false;
+entered = false;
+left = false;
+hasleft = false;

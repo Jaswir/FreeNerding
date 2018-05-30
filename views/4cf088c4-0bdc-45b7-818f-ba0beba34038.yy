@@ -9,7 +9,8 @@
         "17b51ced-d421-44ec-b9a3-98396584525c",
         "ab7d2b2d-be98-4bcf-a8b4-b9d58852a8e3",
         "fb953cd2-db68-48d7-af21-5b973815f081",
-        "03ab917a-1dba-4ae8-bea3-31fe99dccc6e"
+        "03ab917a-1dba-4ae8-bea3-31fe99dccc6e",
+        "db64cd59-d296-4bc2-be57-ae5b14ddde53"
     ],
     "filterType": "GMObject",
     "folderName": "attributes",
