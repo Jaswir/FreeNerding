@@ -95,14 +95,6 @@
             }
         },
         {
-            "Key": "203daf0f-e89b-4e52-9718-964ce32a13a8",
-            "Value": {
-                "id": "0f24f918-7f86-4c19-90c5-c45e02b5a263",
-                "resourcePath": "sprites\\spr_rolemodel\\spr_rolemodel.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "25ee7ad0-2f68-4f22-9d0f-51993cb924b6",
             "Value": {
                 "id": "08772258-8a64-4f29-a226-02dd1498ede3",
@@ -167,11 +159,27 @@
             }
         },
         {
+            "Key": "70dd4637-6b62-499f-a428-c1a00f389182",
+            "Value": {
+                "id": "c364d007-6af5-49b8-949f-f25432b83103",
+                "resourcePath": "objects\\obj_followmodel\\obj_followmodel.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "75ac291e-7061-4bcb-8e8a-3b3545332d41",
             "Value": {
                 "id": "f000cfd0-9720-4847-bf47-ece7d53a2474",
                 "resourcePath": "options\\html5\\options_html5.yy",
                 "resourceType": "GMHtml5Options"
+            }
+        },
+        {
+            "Key": "a0e22349-9ea4-432c-bb25-01334b4aea77",
+            "Value": {
+                "id": "06f867bd-a763-4ce2-81b2-e2b00daf6234",
+                "resourcePath": "sprites\\spr_followmodel\\spr_followmodel.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -274,7 +282,7 @@
             "Key": "cfea8f51-5878-46d2-973b-342ee44d648a",
             "Value": {
                 "id": "87ad26ee-926a-48e7-9d26-4beb63a6496e",
-                "resourcePath": "sprites\\spr_coach\\spr_coach.yy",
+                "resourcePath": "sprites\\spr_jumpmodel\\spr_jumpmodel.yy",
                 "resourceType": "GMSprite"
             }
         },
