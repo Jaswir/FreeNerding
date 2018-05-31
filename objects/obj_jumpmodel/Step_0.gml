@@ -3,13 +3,49 @@
 
 
 switch(state){
-	case "move":
-	
-		move_towards_point(obj_hoop_a.x, obj_hoop_a.y, 2.0);	
-		if(distance_to_point(obj_hoop_a.x, obj_hoop_a.y) <= 0){
-			state = "jump";
-			speed = 0;
-		}		
+		
+	case "spin":
+		if(!startedspin){	
+			oldx = x;
+			oldy = y;
+			startedspin = true;	
+			i = 0;
+		}
+		
+		i-= spinspeed;
+		x = oldx - spinsize - cos(i) * spinsize;	
+		y = oldy + sin(i) * spinsize;
+		
+		if(abs(i) >= spinduration){
+			startedspin = false;
+			alarm[1] = spinduration;
+			state = "neutral";
+
+		}
+		
+		break;
+		
+	case "spin2":
+		if(!startedspin){	
+			oldx = x;
+			oldy = y;
+			startedspin = true;	
+			i = 0;
+		}
+		
+		i-= spinspeed;
+		x = oldx + spinsize - cos(i) * spinsize;	
+		y = oldy + sin(i) * spinsize;
+		
+		if(abs(i) >= spinduration){
+			startedspin = false;
+			if(place_meeting(x, y, obj_hoop_a)) alarm[5] = spinduration;
+			else alarm[2] = spinduration;
+			
+			state = "neutral";
+			
+
+		}
 		
 		break;
 		
@@ -18,10 +54,24 @@ switch(state){
 		move_towards_point(577, 192, 2.0);	
 		if(distance_to_point(577, 192) <= 0){
 			
-			state = startstates[irandom_range(0, 1)];
+			alarm[0] = teleportresttime;
 			speed = 0;
+			state = "neutral";
 		}
 		break;
+		
+		
+	case "move back 2":
+		
+		move_towards_point(781, 368, 1.0);	
+		if(distance_to_point(781, 368) <= 0){
+			
+			alarm[4] = teleportresttime;
+			speed = 0;
+			state = "neutral";
+		}
+		break;
+	
 		
 	case "jump" :
 		if(!startedjump){	
@@ -38,36 +88,15 @@ switch(state){
 		if(abs(i) >= 3.14){
 			startedjump = false;
 			jumpfinished = true;
-			if(place_meeting(x, y, obj_hoop_a)) state = "move back 2";
-			else state = "move back";
 			
 			
-			alarm[1] = 5;
+			//spin
+			state = "spin";
+			alarm[11] = 5;
 		}
 		break;
 		
-	case "move back 2":
-		
-		move_towards_point(781, 368, 2.0);	
-		if(distance_to_point(787, 368) <= 0){
-			
-			state = endstates[irandom_range(0, 1)];
-			speed = 0;
-		}
-		break;
-	
-	case "move2":
-	
-		move_towards_point(obj_hoop_b.x, obj_hoop_b.y, 2.0);	
-		if(distance_to_point(obj_hoop_b.x, obj_hoop_b.y) <= 0){
-			state = "jump2";
-			
-			speed = 0;
-		}		
-		
-		break;
-		
-	case "jump2" :
+		case "jump2" :
 		if(!startedjump){	
 			oldx = x;
 			oldy = y;
@@ -83,12 +112,9 @@ switch(state){
 			startedjump = false;
 			jumpfinished = true;
 			
-			if(place_meeting(x, y, obj_hoop_b)) state = "move back";
-			else state = "move back 2";
-			
-			alarm[1] = 5;
+			//spin
+			state = "spin";
+			alarm[11] = 5;
 		}
 		break;
-	
-	
 }

@@ -2,7 +2,7 @@
     "id": "cfea8f51-5878-46d2-973b-342ee44d648a",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "spr_jumpmodel",
+    "name": "spr_coach",
     "For3D": false,
     "HTile": false,
     "VTile": false,

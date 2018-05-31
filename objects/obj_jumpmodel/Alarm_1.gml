@@ -1,4 +1,5 @@
-/// @description Resets jump 
+/// @description Teleport
 // You can write your code in this editor
 
-jumpfinished = false;
+teleport = true;
+alarm[3] = 10;

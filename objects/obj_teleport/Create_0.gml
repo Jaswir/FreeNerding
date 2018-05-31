@@ -28,7 +28,6 @@ x - regionSize, x + regionSize, y - regionSize, y + regionSize,
 1,
 0);
 part_emitter_burst(ptcl_sys, ptcl_emit, ptcl, burstAmount);
-audio_play_sound(snd_teleport, 1, false);
 alarm[0] = lifeMax;
 
 
