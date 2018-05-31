@@ -5,6 +5,7 @@ if(jumpfinished){
 	x = obj_hoop_b.x;
 	y = obj_hoop_b.y;	
 	jumpfinished = false;	
+	instance_create_layer(x, y, "Instances", obj_teleport);	
 }
 
 	
