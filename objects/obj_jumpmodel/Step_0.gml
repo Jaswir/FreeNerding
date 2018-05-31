@@ -1,53 +1,34 @@
 /// @description Insert description here
 // You can write your code in this editor
+if(spinin){
+		
+	i-= spinspeed;
+	x = oldx - spinsize - cos(i) * spinsize;	
+	y = oldy + sin(i) * spinsize;
+	
+	
+	if(abs(i) >= spins  * pi){
+		spinin = false;
+		alarm[1] = fader.fadeFrames;
+	}
+}
 
+if(spinout){
+		
+	i-= spinspeed;
+	x = oldx - spinsize - cos(i) * spinsize;	
+	y = oldy + sin(i) * spinsize;
+	
+	oldx += oldxdelta;
+	
+	if(abs(i) >= spins * 2 * pi){		
+		spunout = true;
+		spinout = false;
+	}
+}
 
 switch(state){
 		
-	case "spin":
-		if(!startedspin){	
-			oldx = x;
-			oldy = y;
-			startedspin = true;	
-			i = 0;
-		}
-		
-		i-= spinspeed;
-		x = oldx - spinsize - cos(i) * spinsize;	
-		y = oldy + sin(i) * spinsize;
-		
-		if(abs(i) >= spinduration){
-			startedspin = false;
-			alarm[1] = spinduration;
-			state = "neutral";
-
-		}
-		
-		break;
-		
-	case "spin2":
-		if(!startedspin){	
-			oldx = x;
-			oldy = y;
-			startedspin = true;	
-			i = 0;
-		}
-		
-		i-= spinspeed;
-		x = oldx + spinsize - cos(i) * spinsize;	
-		y = oldy + sin(i) * spinsize;
-		
-		if(abs(i) >= spinduration){
-			startedspin = false;
-			if(place_meeting(x, y, obj_hoop_a)) alarm[5] = spinduration;
-			else alarm[2] = spinduration;
-			
-			state = "neutral";
-			
-
-		}
-		
-		break;
 		
 	case "move back":
 		
@@ -56,6 +37,9 @@ switch(state){
 			
 			alarm[0] = teleportresttime;
 			speed = 0;
+			teledhoopa = false;
+			teledhoopb = false;
+			spunout = false;
 			state = "neutral";
 		}
 		break;
@@ -68,6 +52,9 @@ switch(state){
 			
 			alarm[4] = teleportresttime;
 			speed = 0;
+			teledhoopa = false;
+			teledhoopb = false;
+			spunout = false;
 			state = "neutral";
 		}
 		break;

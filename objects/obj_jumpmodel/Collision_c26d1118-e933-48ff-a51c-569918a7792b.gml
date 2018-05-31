@@ -1,13 +1,26 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if(teleport){
-	x = obj_hoop_b.x;
-	y = obj_hoop_b.y;	
-	teleport = false;
-	instance_create_layer(x, y, "Instances", obj_teleport);	
-	instance_create_layer(obj_hoop_a.x, obj_hoop_a.y, "Instances", obj_teleport);
-	audio_play_sound(snd_teleport, 1, false);
+if(teledhoopa){
+	if(spunout) exit;
+	if(spinout) exit;
+	spinout = true;	
+	oldx = x;
+	oldy = y;
+	i = 0;
 }
+else{
+	if(spinin) exit;
+	if(jumpfinished){
+		jumpfinished = false;
+		spinin = true;	
+		oldx = x;
+		oldy = y;
+		i = 0;
 
-	
+		//Teleport effect
+		audio_play_sound(snd_teleport, 1, false);
+		fader.fade = 0.0;
+		fader.fadeout = true;
+	}
+}

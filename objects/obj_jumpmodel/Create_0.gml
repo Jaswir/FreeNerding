@@ -18,7 +18,19 @@ jumpsize = 50;
 jumpspeed = 0.4;
 
 //Spin variables
-startedspin = false;
-spinspeed = 0.15;
+spinin = false;
+spinout = false;
+spunout = false;
+spinspeed = 0.3;
 spinsize = 7;
-spinduration = 7;
+spins = 3;
+var frames = (spins * 2 * pi) / spinspeed;
+var distance = 70;
+oldxdelta = distance / frames;
+teledhoopa = false;
+teledhoopb = false;
+
+//Fade
+fader = instance_create_layer(x, y, "Effects", obj_fade);
+with(fader) followobj = other;
+

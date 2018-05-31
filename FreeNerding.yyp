@@ -138,7 +138,7 @@
             "Key": "50453d87-333f-406e-a791-10184db0e379",
             "Value": {
                 "id": "d8c3f5c4-c7f1-4795-b19d-cf69d6021a9a",
-                "resourcePath": "objects\\obj_teleport\\obj_teleport.yy",
+                "resourcePath": "objects\\obj_fade\\obj_fade.yy",
                 "resourceType": "GMObject"
             }
         },
