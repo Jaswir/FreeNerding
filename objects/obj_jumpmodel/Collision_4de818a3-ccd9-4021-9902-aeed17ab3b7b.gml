@@ -19,15 +19,7 @@ else{
 		oldy = y;
 		i = 0;
 
+		fader.fade = 0.0;
+		fader.fadeout = true;
 	}
 }
-
-		
-//if(teleport){
-//	x = obj_hoop_a.x;
-//	y = obj_hoop_a.y;
-//	teleport = false;
-//	instance_create_layer(x, y, "Instances", obj_teleport);	
-//	instance_create_layer(obj_hoop_b.x, obj_hoop_b.y, "Instances", obj_teleport);
-//	audio_play_sound(snd_teleport, 1, false);
-//}

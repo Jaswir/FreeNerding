@@ -1,5 +1,5 @@
 {
-    "id": "1b3f3c87-c58c-4ef8-9608-3cc29f286173",
+    "id": "e7f5bee0-505b-47b3-bf1c-d04a87f776a5",
     "modelName": "GMSound",
     "mvc": "1.0",
     "name": "snd_teleport",

@@ -79,18 +79,18 @@
             }
         },
         {
+            "Key": "17ff90a6-368b-482f-9d39-b81078017dbc",
+            "Value": {
+                "id": "7f287270-0f55-4319-a88a-dc04249ad81e",
+                "resourcePath": "sprites\\keyboard_help\\keyboard_help.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "189c706f-d2c0-4809-bb8a-38d7b26e6e43",
             "Value": {
                 "id": "e7d70ef1-be19-46a9-ac97-54a1a5721bc3",
                 "resourcePath": "sounds\\snd_jump\\snd_jump.yy",
-                "resourceType": "GMSound"
-            }
-        },
-        {
-            "Key": "1b3f3c87-c58c-4ef8-9608-3cc29f286173",
-            "Value": {
-                "id": "4e20ebbc-72c8-4188-b385-b8319a5df98b",
-                "resourcePath": "sounds\\snd_teleport\\snd_teleport.yy",
                 "resourceType": "GMSound"
             }
         },
@@ -311,6 +311,14 @@
             }
         },
         {
+            "Key": "e7f5bee0-505b-47b3-bf1c-d04a87f776a5",
+            "Value": {
+                "id": "b75d559b-29ca-43cf-9911-2867c9433c52",
+                "resourcePath": "sounds\\snd_teleport\\snd_teleport.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "e89c9281-1255-4836-ab82-30e245c91812",
             "Value": {
                 "id": "7dff0520-759d-476e-87a8-f59fe19f685b",
@@ -339,6 +347,14 @@
             "Value": {
                 "id": "61c040e0-0cf1-4775-820b-074b50e92275",
                 "resourcePath": "views\\ee4eca81-962c-4c50-be82-fe7532810dc8.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "ef8ebdc8-ab0a-4a22-8676-4dfbbc2277f3",
+            "Value": {
+                "id": "27c2ee56-ab6b-4252-95eb-2abb613f77a6",
+                "resourcePath": "views\\ef8ebdc8-ab0a-4a22-8676-4dfbbc2277f3.yy",
                 "resourceType": "GMFolder"
             }
         },

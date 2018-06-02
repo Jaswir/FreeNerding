@@ -17,13 +17,20 @@ if(spinout){
 		
 	i-= spinspeed;
 	x = oldx - spinsize - cos(i) * spinsize;	
-	y = oldy + sin(i) * spinsize;
+	y = oldy - sin(i) * spinsize;
 	
-	oldx += oldxdelta;
+	
+	var dis_a = distance_to_object(obj_hoop_a);
+	var dis_b = distance_to_object(obj_hoop_b);
+	if(dis_a < dis_b)
+		oldx -= oldxdelta / 2;
+	else
+		oldx += oldxdelta;
 	
 	if(abs(i) >= spins * 2 * pi){		
 		spunout = true;
 		spinout = false;
+		alarm[2] = 10;
 	}
 }
 
@@ -32,8 +39,8 @@ switch(state){
 		
 	case "move back":
 		
-		move_towards_point(577, 192, 2.0);	
-		if(distance_to_point(577, 192) <= 0){
+		move_towards_point(567, 192, 2.0);	
+		if(distance_to_point(567, 192) <= 0){
 			
 			alarm[0] = teleportresttime;
 			speed = 0;
@@ -75,10 +82,9 @@ switch(state){
 		if(abs(i) >= 3.14){
 			startedjump = false;
 			jumpfinished = true;
-			
-			
-			//spin
-			state = "spin";
+				
+			//neutral
+			state = "neutral";
 			alarm[11] = 5;
 		}
 		break;
@@ -99,8 +105,8 @@ switch(state){
 			startedjump = false;
 			jumpfinished = true;
 			
-			//spin
-			state = "spin";
+			//neutral
+			state = "neutral";
 			alarm[11] = 5;
 		}
 		break;

@@ -18,8 +18,6 @@ else{
 		oldy = y;
 		i = 0;
 
-		//Teleport effect
-		audio_play_sound(snd_teleport, 1, false);
 		fader.fade = 0.0;
 		fader.fadeout = true;
 	}
