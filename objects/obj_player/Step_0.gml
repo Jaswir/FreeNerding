@@ -1,16 +1,58 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-
-//Normal movement
-var leftdown = false;
-if(keyboard_check(vk_left)) {
-	x -= spd;	
-	leftdown = true;
-}
+//Movement
 if(keyboard_check(vk_right)) x += spd;	
-if(keyboard_check(vk_up))  y -= spd;
-if(keyboard_check(vk_down)) y += spd;
+if(keyboard_check(vk_left))  x -= spd;	
+if(keyboard_check(vk_up))    y -= spd;
+if(keyboard_check(vk_down))  y += spd;
+
+
+if(!jumping){
+	
+	//Scan
+	if(keyboard_check_pressed(vk_space) && keyboard_check(vk_left)){
+		leftjumping = true;
+		oldx = x;
+		oldy = y;
+		i = 0;
+		jumping = true;
+	}
+	
+	else if(keyboard_check_pressed(vk_space) && keyboard_check(vk_up)){
+		jumpingup = true;
+		oldx = x;
+		oldy = y;
+		i = 0;
+		jumping = true;
+	}
+	
+	else if(keyboard_check_pressed(vk_space) && keyboard_check(vk_down)){
+		jumpingdown = true;
+		oldx = x;
+		oldy = y;
+		i = 0;
+		jumping = true;
+	}
+	
+	else if(keyboard_check_pressed(vk_space)){
+		rightjumping = true;
+		oldx = x;
+		oldy = y;
+		i = 0;
+		jumping = true;
+	}
+}
+
+//Assign right jump
+if(jumping){
+	
+	if(leftjumping) event_user(0);
+	if(rightjumping) event_user(1);
+	if(jumpingup) event_user(2);
+	if(jumpingdown) event_user(3);
+	
+}
 
 if(spinin){
 		
@@ -46,34 +88,6 @@ if(spinout){
 	exit;
 }
 
-//Jump
-if(keyboard_check_pressed(vk_space) || startedjump){
-		
-	if(!startedjump){	
-		oldx = x;
-		oldy = y;
-		startedjump = true;	
-		jumpfinished = false;
-		i = 0;
-		
-		audio_play_sound(snd_jump, 1, false);
-	}
-		
-	i-= jumpspeed;
-	if(leftdown) x = oldx - jumpsize + cos(i) * jumpsize;
-	else x = oldx + jumpsize - cos(i) * jumpsize;	
-	y = oldy + sin(i) * jumpsize;
-	if(abs(i) >= 3.14){
-		startedjump = false;
-		jumpfinished = true;
-		alarm[1] = 5;
-	}
-		
-	
-
-}
-	
-	
 
 
 

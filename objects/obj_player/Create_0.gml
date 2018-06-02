@@ -1,10 +1,17 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+//Jumping variables
+jumping = false;
+leftjumping = false;
+rightjumping = false;
+jumpingup = false;
+jumpingdown = false;
+
 spd = 4.0;
 startedjump = false;
 jumpfinished = false;
-jumpsize = 50;
+jumpradius = 40;
 jumpspeed = 0.4;
 
 
