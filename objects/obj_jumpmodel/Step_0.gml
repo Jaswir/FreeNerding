@@ -39,8 +39,8 @@ switch(state){
 		
 	case "move back":
 		
-		move_towards_point(567, 192, 2.0);	
-		if(distance_to_point(567, 192) <= 0){
+		move_towards_point(startx, starty, 2.0);	
+		if(distance_to_point(startx, starty) <= 0){
 			
 			alarm[0] = teleportresttime;
 			speed = 0;
@@ -54,8 +54,8 @@ switch(state){
 		
 	case "move back 2":
 		
-		move_towards_point(781, 368, 1.0);	
-		if(distance_to_point(781, 368) <= 0){
+		move_towards_point(obj_hoop_b.x + 100, obj_hoop_b.y, 1.0);	
+		if(distance_to_point(obj_hoop_b.x + 100, obj_hoop_b.y) <= 0){
 			
 			alarm[4] = teleportresttime;
 			speed = 0;

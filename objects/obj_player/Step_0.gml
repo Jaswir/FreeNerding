@@ -8,51 +8,18 @@ if(keyboard_check(vk_up))    y -= spd;
 if(keyboard_check(vk_down))  y += spd;
 
 
-if(!jumping){
+if(!rightjumping && keyboard_check_pressed(vk_space)){
 	
-	//Scan
-	if(keyboard_check_pressed(vk_space) && keyboard_check(vk_left)){
-		leftjumping = true;
-		oldx = x;
-		oldy = y;
-		i = 0;
-		jumping = true;
-	}
-	
-	else if(keyboard_check_pressed(vk_space) && keyboard_check(vk_up)){
-		jumpingup = true;
-		oldx = x;
-		oldy = y;
-		i = 0;
-		jumping = true;
-	}
-	
-	else if(keyboard_check_pressed(vk_space) && keyboard_check(vk_down)){
-		jumpingdown = true;
-		oldx = x;
-		oldy = y;
-		i = 0;
-		jumping = true;
-	}
-	
-	else if(keyboard_check_pressed(vk_space)){
-		rightjumping = true;
-		oldx = x;
-		oldy = y;
-		i = 0;
-		jumping = true;
-	}
+	rightjumping = true;
+	oldx = x;
+	oldy = y;
+	i = 0;
 }
 
-//Assign right jump
-if(jumping){
+
+if(rightjumping) event_user(1);
 	
-	if(leftjumping) event_user(0);
-	if(rightjumping) event_user(1);
-	if(jumpingup) event_user(2);
-	if(jumpingdown) event_user(3);
-	
-}
+
 
 if(spinin){
 		
