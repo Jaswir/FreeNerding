@@ -20,5 +20,8 @@ else{
 
 		fader.fade = 0.0;
 		fader.fadeout = true;
+		
+		with(obj_hoop_a) image_index = 1;
+		with(obj_hoop_b) image_index = 1;
 	}
 }

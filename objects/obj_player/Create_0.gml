@@ -21,6 +21,8 @@ var distance = 70;
 oldxdelta = distance / frames;
 teledhoopa = false;
 teledhoopb = false;
+teledhoopc = false;
+teledhoopd = false;
 
 //Fade
 fader = instance_create_layer(x, y, "Effects", obj_fade);

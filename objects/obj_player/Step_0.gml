@@ -51,6 +51,10 @@ if(spinout){
 	
 	if(abs(i) >= spins * 2 * pi){		
 		spinout = false;
+		with(obj_hoop_a) image_index = 0;
+		with(obj_hoop_b) image_index = 0;
+		with(obj_hoop_c) image_index = 0;
+		with(obj_hoop_d) image_index = 0;
 	}
 	exit;
 }

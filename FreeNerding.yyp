@@ -127,6 +127,22 @@
             }
         },
         {
+            "Key": "26a3aea2-da28-4c84-9b60-7c954988573e",
+            "Value": {
+                "id": "9340c5f2-1077-484d-980a-613aa9ca8fe8",
+                "resourcePath": "objects\\obj_hoop_c\\obj_hoop_c.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "2bbcf274-0f89-4daa-b90a-c4d214439979",
+            "Value": {
+                "id": "e914dbc0-3980-4800-99fd-1e7a7c302c32",
+                "resourcePath": "objects\\obj_hoop_d\\obj_hoop_d.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "322585fd-3833-4db2-a3d5-d4048a670e6e",
             "Value": {
                 "id": "b95ee4c5-e5f9-469e-be15-c0b2a8ca777c",

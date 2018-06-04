@@ -30,6 +30,8 @@ if(spinout){
 	if(abs(i) >= spins * 2 * pi){		
 		spunout = true;
 		spinout = false;
+		with(obj_hoop_a) image_index = 0;
+		with(obj_hoop_b) image_index = 0;
 		alarm[2] = 10;
 	}
 }
@@ -54,8 +56,8 @@ switch(state){
 		
 	case "move back 2":
 		
-		move_towards_point(obj_hoop_b.x + 100, obj_hoop_b.y, 1.0);	
-		if(distance_to_point(obj_hoop_b.x + 100, obj_hoop_b.y) <= 0){
+		move_towards_point(startx, obj_hoop_b.y, 1.0);	
+		if(distance_to_point(startx, obj_hoop_b.y) <= 0){
 			
 			alarm[4] = teleportresttime;
 			speed = 0;
@@ -99,7 +101,7 @@ switch(state){
 		}
 		
 		i-= jumpspeed;
-		x = oldx - jumpsize + cos(i) * jumpsize;	
+		x = oldx + jumpsize - cos(i) * jumpsize;	
 		y = oldy + sin(i) * jumpsize;
 		if(abs(i) >= 3.14){
 			startedjump = false;
